@@ -1,4 +1,4 @@
-// Copyright (c) 2020 Benito Palacios Sánchez
+// Copyright (c) 2021 Kaplas
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -17,17 +17,31 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
-namespace MyTests
-{
-    using MyLibrary;
-    using NUnit.Framework;
 
-    public class VersionTests
+namespace TF3.YarhlPlugin.ZweiArges.Types
+{
+    using Yarhl.IO.Serialization.Attributes;
+
+    /// <summary>
+    /// File Type structure.
+    /// </summary>
+    [Serializable]
+    public class DatFileType
     {
-        [Test]
-        public void TestVersionNotNull()
-        {
-            Assert.That(LibVersion.GetVersion(), Is.Not.Null);
-        }
+        /// <summary>
+        /// Gets or sets the file type extension.
+        /// </summary>
+        [BinaryString(MaxSize = 4)]
+        public string Extension { get; set; }
+
+        /// <summary>
+        /// Gets or sets the data start offset.
+        /// </summary>
+        public uint Offset { get; set; }
+
+        /// <summary>
+        /// Gets or sets the file count.
+        /// </summary>
+        public int FileCount { get; set; }
     }
 }

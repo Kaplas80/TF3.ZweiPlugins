@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2020 Benito Palacios Sánchez
+// Copyright (c) 2021 Kaplas
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -17,26 +17,25 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
-namespace MyConsole
+
+namespace TF3.YarhlPlugin.ZweiArges.Types
 {
-    using System;
+    using Yarhl.IO.Serialization.Attributes;
 
     /// <summary>
-    /// Main program class.
+    /// Archive header.
     /// </summary>
-    public static class Program
+    [Serializable]
+    public class DatFileHeader
     {
         /// <summary>
-        /// Main entry-point.
+        /// Gets or sets the file magic number.
         /// </summary>
-        /// <param name="args">Application arguments.</param>
-        public static void Main(string[] args)
-        {
-            string consoleVersion = typeof(Program).Assembly.GetName().Version.ToString();
-            Console.WriteLine($"Console version: {consoleVersion}");
+        public int Magic { get; set; }
 
-            string libVersion = MyLibrary.LibVersion.GetVersion();
-            Console.WriteLine($"Library version: {libVersion}");
-        }
+        /// <summary>
+        /// Gets or sets the file types count.
+        /// </summary>
+        public int TypesCount { get; set; }
     }
 }

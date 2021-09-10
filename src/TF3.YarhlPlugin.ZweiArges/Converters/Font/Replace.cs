@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2020 Benito Palacios Sánchez
+// Copyright (c) 2021 Kaplas
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -17,23 +17,45 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
-namespace MyLibrary
+
+namespace TF3.YarhlPlugin.ZweiArges.Converters.Font
 {
-    using System.Reflection;
+    using System;
+    using Yarhl.FileFormat;
+    using Yarhl.FileSystem;
+    using Yarhl.IO;
 
     /// <summary>
-    /// Version of the library.
+    /// Foont replacer.
     /// </summary>
-    public static class LibVersion
+    public class Replace : IConverter<NodeContainerFormat, BinaryFormat>, IInitializer<NodeContainerFormat>
     {
+        private NodeContainerFormat _newFormat = null;
+
         /// <summary>
-        /// Gets the version of the library.
+        /// Set the new font.
         /// </summary>
-        /// <returns>The version of the library.</returns>
-        public static string GetVersion()
+        /// <param name="parameters">The new font.</param>
+        public void Initialize(NodeContainerFormat parameters) => _newFormat = parameters;
+
+        /// <summary>
+        /// Fully replace a font.
+        /// </summary>
+        /// <param name="source">The original font.</param>
+        /// <returns>The new font.</returns>
+        public BinaryFormat Convert(NodeContainerFormat source)
         {
-            Assembly library = typeof(LibVersion).Assembly;
-            return library.GetName().Version.ToString();
+            if (source == null)
+            {
+                throw new ArgumentNullException(nameof(source));
+            }
+
+            if (_newFormat == null)
+            {
+                throw new InvalidOperationException("Uninitialized.");
+            }
+
+            return (BinaryFormat)ConvertFormat.With<Writer>(_newFormat);
         }
     }
 }

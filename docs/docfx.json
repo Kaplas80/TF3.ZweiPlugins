@@ -4,7 +4,7 @@
         "src": [
           {
             "files": [
-              "MyLibrary/MyLibrary.csproj"
+              "TF3.YarhlPlugin.ZweiArges/TF3.YarhlPlugin.ZweiArges.csproj"
             ],
             "src": "../src"
           }
