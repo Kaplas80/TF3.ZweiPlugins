@@ -1,7 +1,11 @@
 <Project>
     <!-- Centralize dependency management -->
     <ItemGroup>
-        <PackageVersion Include="Yarhl" Version="3.1.0" />
+        <PackageVersion Include="Yarhl" Version="3.1.1-preview.28" />
+        <PackageVersion Include="Yarhl.Media" Version="3.1.1-preview.28" />
+        <PackageVersion Include="AsmResolver.PE.File" Version="4.6.0" />
+
+        <PackageVersion Include="System.Drawing.Common" Version="5.0.2" />
 
         <PackageVersion Include="nunit" Version="3.13.1" />
         <PackageVersion Include="NUnit3TestAdapter" Version="3.17.0" />
