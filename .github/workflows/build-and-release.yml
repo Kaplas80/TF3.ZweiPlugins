@@ -14,8 +14,7 @@ on:
       - published
 
 env:
-  NET_SDK: '5.0.300'
-  NET31_SDK: '3.1.410'
+  NET_SDK: '6.0.100'
 
 jobs:
   build_main:
@@ -31,13 +30,11 @@ jobs:
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: ${{ env.NET_SDK }}
-      - name: "Setup .NET Core 3.1 for Cake dependencies"
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: ${{ env.NET31_SDK }}
 
       - name: "Install build tools"
-        run: dotnet tool restore
+        run: |
+          dotnet tool restore
+          dotnet cake --bootstrap
 
       - name: "Generate release notes"
         run: dotnet cake --target=Generate-ReleaseNotes --verbosity=diagnostic
@@ -80,13 +77,11 @@ jobs:
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: ${{ env.NET_SDK }}
-      - name: "Setup .NET Core 3.1 for Cake dependencies"
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: ${{ env.NET31_SDK }}
 
       - name: "Install build tools"
-        run: dotnet tool restore
+        run: |
+          dotnet tool restore
+          dotnet cake --bootstrap
 
       # No need to stage as one job can create the binaries for all platforms
       - name: "Build and test"
@@ -118,18 +113,11 @@ jobs:
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: ${{ env.NET_SDK }}
-      - name: "Setup .NET Core 3.1 for Cake dependencies"
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: ${{ env.NET31_SDK }}
 
       - name: "Install build tools"
-        run: dotnet tool restore
-
-      # Weird way to authenticate in Azure DevOps Artifacts
-      # Then, we need to setup VSS_NUGET_EXTERNAL_FEED_ENDPOINTS
-      - name: "Install Azure Artifacts Credential Provider"
-        run: wget -qO- https://aka.ms/install-artifacts-credprovider.sh | bash
+        run: |
+          dotnet tool restore
+          dotnet cake --bootstrap
 
       - name: "Publish artifacts"
         run: dotnet cake --target=Push-Artifacts --verbosity=diagnostic
