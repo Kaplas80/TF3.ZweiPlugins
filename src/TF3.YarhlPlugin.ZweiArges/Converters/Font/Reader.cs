@@ -21,8 +21,9 @@
 namespace TF3.YarhlPlugin.ZweiArges.Converters.Font
 {
     using System;
-    using System.Drawing;
-    using System.Drawing.Imaging;
+    using SixLabors.ImageSharp;
+    using SixLabors.ImageSharp.Formats.Bmp;
+    using SixLabors.ImageSharp.PixelFormats;
     using Yarhl.FileFormat;
     using Yarhl.FileSystem;
     using Yarhl.IO;
@@ -49,24 +50,20 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Font
 
             var reader = new DataReader(source.Stream);
 
+            BmpEncoder encoder = new ();
+            encoder.BitsPerPixel = BmpBitsPerPixel.Pixel8;
+
             Node root = NodeFactory.CreateContainer("root");
             for (int charIndex = 0x8141; reader.Stream.Position < reader.Stream.Length; charIndex++)
             {
                 byte[] imageData = reader.ReadBytes(8 * 16);
                 int width = ((imageData[6] | (imageData[7] << 8)) >> 9) & 0x7F;
 
-                Bitmap bmp = new (width, 16, PixelFormat.Format8bppIndexed);
-                bmp.Palette = BuildPallete(bmp.Palette);
-
-                BitmapData bmpData = bmp.LockBits(new Rectangle(0, 0, bmp.Width, bmp.Height), ImageLockMode.WriteOnly, bmp.PixelFormat);
-
-                int size = Math.Abs(bmpData.Stride) * bmp.Height;
-                byte[] data = new byte[size];
-
-                IntPtr ptr = bmpData.Scan0;
+                using Image<L8> image = new (width, 16);
 
                 for (int y = 0; y < 16; y++)
                 {
+                    Span<L8> pixelRowSpan = image.GetPixelRowSpan(y);
                     for (int x = 0; x < width; x++)
                     {
                         int byteIndex = (y * 8) + ((x / 5) * 2);
@@ -75,42 +72,21 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Font
 
                         if (value != 0)
                         {
-                            data[(y * bmpData.Stride) + x] = (byte)value;
+                            // The image is indexed but the pallete is unknown, so I use a custom grayscale palette.
+                            byte v = (byte)((value * 32) + 31);
+                            pixelRowSpan[x] = new L8(v);
                         }
                     }
                 }
 
-                System.Runtime.InteropServices.Marshal.Copy(data, 0, ptr, data.Length);
-                bmp.UnlockBits(bmpData);
-
                 Node node = NodeFactory.FromMemory($"{charIndex}.bmp");
-                bmp.Save(node.Stream, ImageFormat.Bmp);
+
+                image.SaveAsBmp(node.Stream, encoder);
 
                 root.Add(node);
             }
 
             return root.GetFormatAs<NodeContainerFormat>();
-        }
-
-        private static ColorPalette BuildPallete(ColorPalette original)
-        {
-            ColorPalette result = original;
-            Color[] entries = result.Entries;
-
-            entries[0] = Color.FromArgb((byte)0, (byte)0, (byte)0);
-            for (int i = 1; i < 8; i++)
-            {
-                // Other alternative is: (Math.Pow(2, i + 1) - 1)
-                byte val = (byte)(((i - 1) << 4) | 0x80);
-                entries[i] = Color.FromArgb(val, val, val);
-            }
-
-            for (int i = 8; i < 256; i++)
-            {
-                entries[i] = Color.FromArgb((byte)0, (byte)0, (byte)0);
-            }
-
-            return result;
         }
     }
 }

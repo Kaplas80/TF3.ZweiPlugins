@@ -21,8 +21,10 @@
 namespace TF3.YarhlPlugin.ZweiArges.Converters.Font
 {
     using System;
-    using System.Drawing;
-    using System.Drawing.Imaging;
+    using SixLabors.ImageSharp;
+    using SixLabors.ImageSharp.PixelFormats;
+    using SixLabors.ImageSharp.Processing;
+    using SixLabors.ImageSharp.Processing.Processors.Quantization;
     using Yarhl.FileFormat;
     using Yarhl.FileSystem;
     using Yarhl.IO;
@@ -49,19 +51,16 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Font
             DataStream stream = DataStreamFactory.FromArray(data, 0, data.Length);
             var writer = new DataWriter(stream);
 
+            ReadOnlyMemory<Color> palette = BuildPalette();
+            IQuantizer quantizer = new PaletteQuantizer(palette);
+
             foreach (Node bmpNode in source.Root.Children)
             {
                 int charIndex = int.Parse(bmpNode.Name.Replace(".bmp", string.Empty)) - 0x8141;
                 writer.Stream.Position = charIndex * 0x80;
 
-                Bitmap bmp = Image.FromStream(bmpNode.Stream) as Bitmap;
-                BitmapData bmpData = bmp.LockBits(new Rectangle(0, 0, bmp.Width, bmp.Height), ImageLockMode.WriteOnly, bmp.PixelFormat);
-                IntPtr ptr = bmpData.Scan0;
-
-                int size = Math.Abs(bmpData.Stride) * bmp.Height;
-                byte[] bmpValues = new byte[size];
-
-                System.Runtime.InteropServices.Marshal.Copy(ptr, bmpValues, 0, size);
+                Image<Rgb24> image = Image.Load<Rgb24>(bmpNode.Stream);
+                image.Mutate(x => x.Quantize(quantizer));
 
                 ushort[] rowValues = new ushort[4];
                 for (int y = 0; y < 16; y++)
@@ -69,14 +68,16 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Font
                     rowValues[0] = 0x0000;
                     rowValues[1] = 0x0000;
                     rowValues[2] = 0x0000;
-                    rowValues[3] = y == 0 ? (ushort)(bmp.Width << 9) : (ushort)0x0000;
+                    rowValues[3] = y == 0 ? (ushort)(image.Width << 9) : (ushort)0x0000;
+
+                    Span<Rgb24> pixelRowSpan = image.GetPixelRowSpan(y);
 
                     for (int x = 0; x < 17; x++)
                     {
                         int ushortIndex = x / 5;
                         int offset = (x % 5) * 3;
 
-                        byte value = x >= bmp.Width ? (byte)7 : bmpValues[(y * bmpData.Stride) + x];
+                        byte value = x >= image.Width ? (byte)7 : GetColorIndex(pixelRowSpan[x]);
 
                         rowValues[ushortIndex] |= (ushort)(value << offset);
                     }
@@ -86,11 +87,28 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Font
                     writer.Write(rowValues[2]);
                     writer.Write(rowValues[3]);
                 }
-
-                bmp.UnlockBits(bmpData);
             }
 
             return new BinaryFormat(stream);
+        }
+
+        private static ReadOnlyMemory<Color> BuildPalette()
+        {
+            Color[] palette = new Color[8];
+            palette[0] = new Color(new Rgb24(0, 0, 0));
+            for (int i = 1; i < 8; i++)
+            {
+                byte value = (byte)((i * 32) + 31);
+                palette[i] = new Color(new Rgb24(value, value, value));
+            }
+
+            return palette;
+        }
+
+        private static byte GetColorIndex(Rgb24 color)
+        {
+            // After quantization R == G == B, so I can use any of them
+            return (byte)((color.R - 31) / 32);
         }
     }
 }

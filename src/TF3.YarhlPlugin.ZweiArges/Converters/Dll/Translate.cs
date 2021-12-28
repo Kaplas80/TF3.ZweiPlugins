@@ -108,13 +108,18 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Dll
                         translationOffsets[stringIndex] = (uint)writer.Stream.Position;
                     }
 
-                    if (entry.Translated == "<!empty>")
+                    if (entry.Original == "<!empty>")
                     {
                         writer.Write((byte)0x00);
                     }
                     else
                     {
                         string text = entry.Translated;
+                        if (string.IsNullOrEmpty(text))
+                        {
+                            text = entry.Original;
+                        }
+
                         foreach (Tuple<string, string> replacement in _replacements)
                         {
                             text = text.Replace(replacement.Item1, replacement.Item2);
@@ -127,6 +132,7 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Dll
                             strFullWidth = regex.Replace(strFullWidth, toHalfWidth);
                         }
 
+                        strFullWidth = strFullWidth.Replace('\uFF07', '\u2019');
                         strFullWidth = strFullWidth.Replace('\u3000', '\u002D');
                         writer.Write(strFullWidth);
                     }
