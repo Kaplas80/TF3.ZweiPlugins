@@ -1,0 +1,132 @@
+{
+  "api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.html",
+    "title": "Namespace TF3.YarhlPlugin.ZweiArges.Converters.Dat | TF3 Zwei Plugins",
+    "keywords": "Namespace TF3.YarhlPlugin.ZweiArges.Converters.Dat Classes Reader Deserializes DAT archives. Writer Serializes DAT archives."
+  },
+  "api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.html",
+    "title": "Class Reader | TF3 Zwei Plugins",
+    "keywords": "Class Reader Deserializes DAT archives. Inheritance Object Reader Namespace : TF3.YarhlPlugin.ZweiArges.Converters.Dat Assembly : TF3.YarhlPlugin.ZweiArges.dll Syntax public class Reader : IConverter<BinaryFormat, NodeContainerFormat> Methods | Improve this Doc View Source Convert(BinaryFormat) Converts a BinaryFormat into a NodeContainerFormat. Declaration public virtual NodeContainerFormat Convert(BinaryFormat source) Parameters Type Name Description BinaryFormat source Input format. Returns Type Description NodeContainerFormat The node container format."
+  },
+  "api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.html",
+    "title": "Class Writer | TF3 Zwei Plugins",
+    "keywords": "Class Writer Serializes DAT archives. Inheritance Object Writer Namespace : TF3.YarhlPlugin.ZweiArges.Converters.Dat Assembly : TF3.YarhlPlugin.ZweiArges.dll Syntax public class Writer : IConverter<NodeContainerFormat, BinaryFormat> Methods | Improve this Doc View Source Convert(NodeContainerFormat) Converts a NodeContainerFormat into a BinaryFormat. Declaration public virtual BinaryFormat Convert(NodeContainerFormat source) Parameters Type Name Description NodeContainerFormat source Input format. Returns Type Description BinaryFormat The binary format."
+  },
+  "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.html",
+    "title": "Class ExtractStrings | TF3 Zwei Plugins",
+    "keywords": "Class ExtractStrings Extracts Zwei.dll translatable strings to a Po file. Inheritance Object ExtractStrings Implements IInitializer < PoHeader > Namespace : TF3.YarhlPlugin.ZweiArges.Converters.Dll Assembly : TF3.YarhlPlugin.ZweiArges.dll Syntax public class ExtractStrings : IConverter<PEFileFormat, Po>, IInitializer<PoHeader> Methods | Improve this Doc View Source Convert(PEFileFormat) Extracts strings to a Po file. Declaration public Po Convert(PEFileFormat source) Parameters Type Name Description PEFileFormat source Input format. Returns Type Description Po The po file. | Improve this Doc View Source Initialize(PoHeader) Converter initializer. Declaration public void Initialize(PoHeader parameters) Parameters Type Name Description PoHeader parameters Header to use in created Po elements. Implements IInitializer<>"
+  },
+  "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.html",
+    "title": "Namespace TF3.YarhlPlugin.ZweiArges.Converters.Dll | TF3 Zwei Plugins",
+    "keywords": "Namespace TF3.YarhlPlugin.ZweiArges.Converters.Dll Classes ExtractStrings Extracts Zwei.dll translatable strings to a Po file. Reader Deserializes PE files. Translate Inserts strings from Po file to the game dll. Writer Serializes PE files."
+  },
+  "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.html",
+    "title": "Class Reader | TF3 Zwei Plugins",
+    "keywords": "Class Reader Deserializes PE files. Inheritance Object Reader Implements IInitializer < DllStringInfo > Namespace : TF3.YarhlPlugin.ZweiArges.Converters.Dll Assembly : TF3.YarhlPlugin.ZweiArges.dll Syntax public class Reader : IConverter<BinaryFormat, PEFileFormat>, IInitializer<DllStringInfo> Methods | Improve this Doc View Source Convert(BinaryFormat) Converts a BinaryFormat into a PEFile. Declaration public PEFileFormat Convert(BinaryFormat source) Parameters Type Name Description BinaryFormat source Input format. Returns Type Description PEFileFormat The PEFile format. | Improve this Doc View Source Initialize(DllStringInfo) Converter initializer. Declaration public void Initialize(DllStringInfo parameters) Parameters Type Name Description DllStringInfo parameters String info. Remarks Initialization is mandatory. Implements IInitializer<>"
+  },
+  "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.html",
+    "title": "Class Translate | TF3 Zwei Plugins",
+    "keywords": "Class Translate Inserts strings from Po file to the game dll. Inheritance Object Translate Implements IInitializer < Po > Namespace : TF3.YarhlPlugin.ZweiArges.Converters.Dll Assembly : TF3.YarhlPlugin.ZweiArges.dll Syntax public class Translate : IConverter<PEFileFormat, PEFileFormat>, IInitializer<Po> Methods | Improve this Doc View Source Convert(PEFileFormat) Inserts the translated strings from Po file in a Armp table. Declaration public PEFileFormat Convert(PEFileFormat source) Parameters Type Name Description PEFileFormat source Original Dll. Returns Type Description PEFileFormat Translated Dll. | Improve this Doc View Source Initialize(Po) Converter initializer. Declaration public void Initialize(Po parameters) Parameters Type Name Description Po parameters Po with translation. Remarks Initialization is mandatory. Implements IInitializer<>"
+  },
+  "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer.html",
+    "title": "Class Writer | TF3 Zwei Plugins",
+    "keywords": "Class Writer Serializes PE files. Inheritance Object Writer Namespace : TF3.YarhlPlugin.ZweiArges.Converters.Dll Assembly : TF3.YarhlPlugin.ZweiArges.dll Syntax public class Writer : IConverter<PEFileFormat, BinaryFormat> Methods | Improve this Doc View Source Convert(PEFileFormat) Converts a PEFile into a BinaryFormat . Declaration public BinaryFormat Convert(PEFileFormat source) Parameters Type Name Description PEFileFormat source Input format. Returns Type Description BinaryFormat The BinaryFormat format."
+  },
+  "api/TF3.YarhlPlugin.ZweiArges.Converters.Font.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Converters.Font.html",
+    "title": "Namespace TF3.YarhlPlugin.ZweiArges.Converters.Font | TF3 Zwei Plugins",
+    "keywords": "Namespace TF3.YarhlPlugin.ZweiArges.Converters.Font Classes Reader Deserializes Font archives. Replace Foont replacer. Writer Serializes Font archives."
+  },
+  "api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.html",
+    "title": "Class Reader | TF3 Zwei Plugins",
+    "keywords": "Class Reader Deserializes Font archives. Inheritance Object Reader Namespace : TF3.YarhlPlugin.ZweiArges.Converters.Font Assembly : TF3.YarhlPlugin.ZweiArges.dll Syntax public class Reader : IConverter<BinaryFormat, NodeContainerFormat> Methods | Improve this Doc View Source Convert(BinaryFormat) Converts a BinaryFormat into a NodeContainerFormat. Declaration public virtual NodeContainerFormat Convert(BinaryFormat source) Parameters Type Name Description BinaryFormat source Input format. Returns Type Description NodeContainerFormat The node container format."
+  },
+  "api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.html",
+    "title": "Class Replace | TF3 Zwei Plugins",
+    "keywords": "Class Replace Foont replacer. Inheritance Object Replace Implements IInitializer < NodeContainerFormat > Namespace : TF3.YarhlPlugin.ZweiArges.Converters.Font Assembly : TF3.YarhlPlugin.ZweiArges.dll Syntax public class Replace : IConverter<NodeContainerFormat, BinaryFormat>, IInitializer<NodeContainerFormat> Methods | Improve this Doc View Source Convert(NodeContainerFormat) Fully replace a font. Declaration public BinaryFormat Convert(NodeContainerFormat source) Parameters Type Name Description NodeContainerFormat source The original font. Returns Type Description BinaryFormat The new font. | Improve this Doc View Source Initialize(NodeContainerFormat) Set the new font. Declaration public void Initialize(NodeContainerFormat parameters) Parameters Type Name Description NodeContainerFormat parameters The new font. Implements IInitializer<>"
+  },
+  "api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.html",
+    "title": "Class Writer | TF3 Zwei Plugins",
+    "keywords": "Class Writer Serializes Font archives. Inheritance Object Writer Namespace : TF3.YarhlPlugin.ZweiArges.Converters.Font Assembly : TF3.YarhlPlugin.ZweiArges.dll Syntax public class Writer : IConverter<NodeContainerFormat, BinaryFormat> Methods | Improve this Doc View Source Convert(NodeContainerFormat) Converts a NodeContainerFormat into a BinaryFormat. Declaration public virtual BinaryFormat Convert(NodeContainerFormat source) Parameters Type Name Description NodeContainerFormat source Input format. Returns Type Description BinaryFormat The binary format."
+  },
+  "api/TF3.YarhlPlugin.ZweiArges.Formats.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Formats.html",
+    "title": "Namespace TF3.YarhlPlugin.ZweiArges.Formats | TF3 Zwei Plugins",
+    "keywords": "Namespace TF3.YarhlPlugin.ZweiArges.Formats Classes PEFileFormat IFormat wrapper for AsmResolver.PE.File.PEFile."
+  },
+  "api/TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.html",
+    "title": "Class PEFileFormat | TF3 Zwei Plugins",
+    "keywords": "Class PEFileFormat IFormat wrapper for AsmResolver.PE.File.PEFile. Inheritance Object PEFileFormat Namespace : TF3.YarhlPlugin.ZweiArges.Formats Assembly : TF3.YarhlPlugin.ZweiArges.dll Syntax public class PEFileFormat : ICloneableFormat Constructors | Improve this Doc View Source PEFileFormat() Initializes a new instance of the PEFileFormat class. Declaration public PEFileFormat() Properties | Improve this Doc View Source Internal Gets or sets the PEFile. Declaration public PEFile Internal { get; set; } Property Value Type Description PEFile | Improve this Doc View Source StringInfo Gets or sets the string info inside the PE file. Declaration public DllStringInfo StringInfo { get; set; } Property Value Type Description DllStringInfo Methods | Improve this Doc View Source DeepClone() Declaration public object DeepClone() Returns Type Description Object"
+  },
+  "api/TF3.YarhlPlugin.ZweiArges.Helpers.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Helpers.html",
+    "title": "Namespace TF3.YarhlPlugin.ZweiArges.Helpers | TF3 Zwei Plugins",
+    "keywords": "Namespace TF3.YarhlPlugin.ZweiArges.Helpers Classes MapStringLib Converter between FullWidth and HalfWidth characters. https://source.winehq.org/source/dlls/kernel32/locale.c ."
+  },
+  "api/TF3.YarhlPlugin.ZweiArges.Helpers.MapStringLib.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Helpers.MapStringLib.html",
+    "title": "Class MapStringLib | TF3 Zwei Plugins",
+    "keywords": "Class MapStringLib Converter between FullWidth and HalfWidth characters. https://source.winehq.org/source/dlls/kernel32/locale.c . Inheritance Object MapStringLib Namespace : TF3.YarhlPlugin.ZweiArges.Helpers Assembly : TF3.YarhlPlugin.ZweiArges.dll Syntax public static class MapStringLib : object Methods | Improve this Doc View Source ToFullWidth(String) Converts a string to full width characters. Declaration public static string ToFullWidth(string input) Parameters Type Name Description String input The input string. Returns Type Description String The full width string. | Improve this Doc View Source ToHalfWidth(String) Converts a string to half width characters. Declaration public static string ToHalfWidth(string input) Parameters Type Name Description String input The input string. Returns Type Description String The half width string."
+  },
+  "api/TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.html",
+    "title": "Class DatFileHeader | TF3 Zwei Plugins",
+    "keywords": "Class DatFileHeader Archive header. Inheritance Object DatFileHeader Namespace : TF3.YarhlPlugin.ZweiArges.Types Assembly : TF3.YarhlPlugin.ZweiArges.dll Syntax public class DatFileHeader : object Properties | Improve this Doc View Source Magic Gets or sets the file magic number. Declaration public int Magic { get; set; } Property Value Type Description Int32 | Improve this Doc View Source TypesCount Gets or sets the file types count. Declaration public int TypesCount { get; set; } Property Value Type Description Int32"
+  },
+  "api/TF3.YarhlPlugin.ZweiArges.Types.DatFileType.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Types.DatFileType.html",
+    "title": "Class DatFileType | TF3 Zwei Plugins",
+    "keywords": "Class DatFileType File Type structure. Inheritance Object DatFileType Namespace : TF3.YarhlPlugin.ZweiArges.Types Assembly : TF3.YarhlPlugin.ZweiArges.dll Syntax public class DatFileType : object Properties | Improve this Doc View Source Extension Gets or sets the file type extension. Declaration public string Extension { get; set; } Property Value Type Description String | Improve this Doc View Source FileCount Gets or sets the file count. Declaration public int FileCount { get; set; } Property Value Type Description Int32 | Improve this Doc View Source Offset Gets or sets the data start offset. Declaration public uint Offset { get; set; } Property Value Type Description UInt32"
+  },
+  "api/TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.html",
+    "title": "Class DllStringInfo | TF3 Zwei Plugins",
+    "keywords": "Class DllStringInfo Parameters for Dll reading. Inheritance Object DllStringInfo Namespace : TF3.YarhlPlugin.ZweiArges.Types Assembly : TF3.YarhlPlugin.ZweiArges.dll Syntax public class DllStringInfo : object Properties | Improve this Doc View Source PointerTableOffset Gets or sets the pointer table position. Declaration public uint PointerTableOffset { get; set; } Property Value Type Description UInt32 | Improve this Doc View Source StringCount Gets or sets the string count. Declaration public uint StringCount { get; set; } Property Value Type Description UInt32"
+  },
+  "api/TF3.YarhlPlugin.ZweiArges.Types.html": {
+    "href": "api/TF3.YarhlPlugin.ZweiArges.Types.html",
+    "title": "Namespace TF3.YarhlPlugin.ZweiArges.Types | TF3 Zwei Plugins",
+    "keywords": "Namespace TF3.YarhlPlugin.ZweiArges.Types Classes DatFileHeader Archive header. DatFileType File Type structure. DllStringInfo Parameters for Dll reading."
+  },
+  "CONTRIBUTING.html": {
+    "href": "CONTRIBUTING.html",
+    "title": "Contributing to the project | TF3 Zwei Plugins",
+    "keywords": "Contributing to the project Thanks for taking the time to contribute! ✨ In this document you will find all the information you need to make sure the project continues to be the high-quality product we want to be! Reporting issues Issues When reporting a problem, be as specific as possible. Ideally, you should provide an small snippet of code that reproduces the issue. Try to provide also the following information: OS: Linux / Windows / Mac OS Runtime: .NET Framework, Mono, .NET Core Version of the product Stacktrace if any What's happening and what you expect to happen Features If you want to ask for a new feature, first make sure it hasn't been reported yet by using the search box in the issue tab. Make sure that the feature aligns with the direction of the project. Pull Request Before starting a pull request, create an issue requesting the feature you would like to see and implement. If you are fixing a bug, create also an issue to be able to track the problem. State that you would like to work on that. The team will reply to the issue as soon as possible, discussing the proposal if needed. This guarantee that later on the Pull Request we don't reject the proposal without having a discussion first and we don't waste time. In general, the process to create a pull request is: Create an issue describing the bug or feature and state you would like to work on that. The team will cheer you and/or discuss with you the issue. Fork the project. Clone your forked project and create a git branch. Make the necessary code changes in as many commits as you want. The commit message should follow this convention: :emoji: Short description #IssueID Long description if needed. Create a pull request. After reviewing your changes and making any new commits if needed, the team will approve and merge it. For a complete list of emoji description see this repository . Code Guidelines We follow the DotNet Runtime coding style . File headers ✔️ DO put the license in the file header with this format: // // <FileName>.cs // // Author: // <AuthorName> <email@example.com> // // Copyright (c) <Year> <AuthorName> // // Permission is hereby granted, free of charge, to any person obtaining a copy // of this software and associated documentation files (the \"Software\"), to deal // in the Software without restriction, including without limitation the rights // to use, copy, modify, merge, publish, distribute, sublicense, and/or sell // copies of the Software, and to permit persons to whom the Software is // furnished to do so, subject to the following conditions: // // The above copyright notice and this permission notice shall be included in // all copies or substantial portions of the Software. // // THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN // THE SOFTWARE. Usings ✔️ DO put the using inside the namespace. ✔️ DO include all the namespaces you are using. ✔️ DO use the using statement for IDisposable types."
+  },
+  "dev/Changelog.html": {
+    "href": "dev/Changelog.html",
+    "title": "vNext (September 10, 2021) | TF3 Zwei Plugins",
+    "keywords": "vNext (September 10, 2021) As part of this release we had 2 issues closed. enhancements #1 First version #2 Upgrade to .NET6 and update packages"
+  },
+  "guides/Contributing.html": {
+    "href": "guides/Contributing.html",
+    "title": "Contributing to the project | TF3 Zwei Plugins",
+    "keywords": "Contributing to the project Thanks for taking the time to contribute! ✨ In this document you will find all the information you need to make sure the project continues to be the high-quality product we want to be! Reporting issues Issues When reporting a problem, be as specific as possible. Ideally, you should provide an small snippet of code that reproduces the issue. Try to provide also the following information: OS: Linux / Windows / Mac OS Runtime: .NET Framework, Mono, .NET Core Version of the product Stacktrace if any What's happening and what you expect to happen Features If you want to ask for a new feature, first make sure it hasn't been reported yet by using the search box in the issue tab. Make sure that the feature aligns with the direction of the project. Pull Request Before starting a pull request, create an issue requesting the feature you would like to see and implement. If you are fixing a bug, create also an issue to be able to track the problem. State that you would like to work on that. The team will reply to the issue as soon as possible, discussing the proposal if needed. This guarantee that later on the Pull Request we don't reject the proposal without having a discussion first and we don't waste time. In general, the process to create a pull request is: Create an issue describing the bug or feature and state you would like to work on that. The team will cheer you and/or discuss with you the issue. Fork the project. Clone your forked project and create a git branch. Make the necessary code changes in as many commits as you want. The commit message should follow this convention: :emoji: Short description #IssueID Long description if needed. Create a pull request. After reviewing your changes and making any new commits if needed, the team will approve and merge it. For a complete list of emoji description see this repository . Code Guidelines We follow the DotNet Runtime coding style . File headers ✔️ DO put the license in the file header with this format: // // <FileName>.cs // // Author: // <AuthorName> <email@example.com> // // Copyright (c) <Year> <AuthorName> // // Permission is hereby granted, free of charge, to any person obtaining a copy // of this software and associated documentation files (the \"Software\"), to deal // in the Software without restriction, including without limitation the rights // to use, copy, modify, merge, publish, distribute, sublicense, and/or sell // copies of the Software, and to permit persons to whom the Software is // furnished to do so, subject to the following conditions: // // The above copyright notice and this permission notice shall be included in // all copies or substantial portions of the Software. // // THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN // THE SOFTWARE. Usings ✔️ DO put the using inside the namespace. ✔️ DO include all the namespaces you are using. ✔️ DO use the using statement for IDisposable types."
+  },
+  "guides/First-Steps.html": {
+    "href": "guides/First-Steps.html",
+    "title": "First steps | TF3 Zwei Plugins",
+    "keywords": "First steps Welcome to this project!"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "TF3 Zwei Plugins | TF3 Zwei Plugins",
+    "keywords": "TF3 Zwei Plugins This repository contains plugins and scripts compatible with TF3 . Contents Zwei: The Arges Adventure PC TF3.YarhlPlugins.ZweiArges.dll : Plugin for reading and writing \"Zwei: The Arges Adventure\" archives. TF3.StringReplacements.ZweiArges.txt : Character replacements. TF3.Script.ZweiArges.json : Script for extracting and repacking all the needed assets in Zwei: Arges Adventure (Steam version) for translation. Usage Plugins and script Copy TF3.YarhlPlugins.ZweiArges.dll , TF3.YarhlPlugin.ZweiArges.deps.json and TF3.StringReplacements.ZweiArges.txt to the plugins directory of TF3. Copy AsmResolver.dll and AsmResolver.PE.File.dll to the root directory of TF3. Copy the TF3.Script.ZweiArges.json to the scripts directory of TF3. Credits Thanks to Pleonex for Yarhl and PleOps.Cake . Other libraries used: AsmResolver Icon by xmanmc ."
+  },
+  "README.html": {
+    "href": "README.html",
+    "title": "TF3 Zwei Plugins | TF3 Zwei Plugins",
+    "keywords": "TF3 Zwei Plugins This repository contains plugins and scripts compatible with TF3 . Contents Zwei: The Arges Adventure PC TF3.YarhlPlugins.ZweiArges.dll : Plugin for reading and writing \"Zwei: The Arges Adventure\" archives. TF3.StringReplacements.ZweiArges.txt : Character replacements. TF3.Script.ZweiArges.json : Script for extracting and repacking all the needed assets in Zwei: Arges Adventure (Steam version) for translation. Usage Plugins and script Copy TF3.YarhlPlugins.ZweiArges.dll , TF3.YarhlPlugin.ZweiArges.deps.json and TF3.StringReplacements.ZweiArges.txt to the plugins directory of TF3. Copy AsmResolver.dll and AsmResolver.PE.File.dll to the root directory of TF3. Copy the TF3.Script.ZweiArges.json to the scripts directory of TF3. Credits Thanks to Pleonex for Yarhl and PleOps.Cake . Other libraries used: AsmResolver Icon by xmanmc ."
+  }
+}

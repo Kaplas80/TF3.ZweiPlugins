@@ -1,0 +1,453 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/runner/work/TF3.ZweiPlugins/TF3.ZweiPlugins/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../CONTRIBUTING.md",
+      "output": {
+        ".html": {
+          "relative_path": "CONTRIBUTING.html",
+          "hash": "A6/XHP+tWOmeLdRn9iuyVXMfWbLbHv5rnLsgyE4IvCE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "vn6dVo3Earo+DBuT6kvrD7TCb8MHvbEK1BzIOvRuVGQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.html",
+          "hash": "vSc5K69ZzDKF4nmfM7VjmRDxVMP99dpqVOmbDTDi6tg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.html",
+          "hash": "AuqHlMm6iiVUTSwAuUbEkllFLjpN1X9bKVw439fcRlA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.html",
+          "hash": "Hvw9bu/Csswe+V5QyrWh3TwvBneAp6rtjzLTRJhB/R8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.html",
+          "hash": "wZhaMq2iyybe0bpirpfkDaZdcdiPsk5XR59vkwBwb+0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.html",
+          "hash": "HkRKsBiS+SZLBm2XuL1GOhlJMzqh4Ghl8NE+SAzd/cI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.html",
+          "hash": "2N2rZmvUijS5G1ghSDk1EnxwklM8Ybt18unfTSnK1vM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer.html",
+          "hash": "gCDJNoEx1ivZ8XysZPDqV0JeEE2hP7n+GU7+eHZk/uQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.html",
+          "hash": "F7lOHpamVEB7OIiN2FUs01ZxwP//cnh/G6EQKZQZFao="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.html",
+          "hash": "nrRqovJmS4f+x6d08TcVXH2hTLfRraeQ5ZS7WX5lhRo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.html",
+          "hash": "h4WK2QqKmqYb7XjThGzyVXSREshRd9YAC5QbuL5esP0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.html",
+          "hash": "MUERQsa3bu58pV1Dp0Re1NCBP7cNSnVFrm7YcxpvPDo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Font.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Font.html",
+          "hash": "PROkNQ2icn5/ou3p+33+riILQ1uH1ea29WAyqQVuOI4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.html",
+          "hash": "oaePRrW6KTCJstDFgW61o+9dvYw/j8uMNI2Iyv8tblo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Formats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Formats.html",
+          "hash": "hCqOrjd47fiYcUU/am6iZDFA0eDRXbetX3AkkJYABy0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Helpers.MapStringLib.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Helpers.MapStringLib.html",
+          "hash": "PpC9yQjZe9ibQiDJjJvCwAHET//LFjCFBmCaf63QZ9Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Helpers.html",
+          "hash": "3NNDbuw+fHMniZ5He6ufiQCykmXZZ1Z5e4Us7ZObbkY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.html",
+          "hash": "zTuu5Eyyt5xtidzrnlhJr7CBrXYM30ALo+1HwDIiOh4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Types.DatFileType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Types.DatFileType.html",
+          "hash": "19PqLYRjCEhyt/PjZxAjeaEtWXi8RrKZMYMB0DRbmco="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.html",
+          "hash": "a0yUcNCJ9nxgfk/8h4kPJmb0TPE+1MOG03Fei28S/U0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TF3.YarhlPlugin.ZweiArges.Types.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Types.html",
+          "hash": "4O4b6VewLAetiKygxTySs6Ar2Q+tlQWwV+P/sOrSdF0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "dev/Changelog.md",
+      "output": {
+        ".html": {
+          "relative_path": "dev/Changelog.html",
+          "hash": "4Fe2ClflLr5woPyeV//bpWAR/GZrzmdAdgPLyYzBIWc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "dev/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "dev/toc.html",
+          "hash": "FJrUBG0Pu+spI3wVQ+f/SX6/7xt3POM/OQODXTaJvvI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guides/Contributing.md",
+      "output": {
+        ".html": {
+          "relative_path": "guides/Contributing.html",
+          "hash": "JwpTRyUi4M7qiiO5SHuH//cC2FbR+re+Mrtg5zKg8+Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guides/First-Steps.md",
+      "output": {
+        ".html": {
+          "relative_path": "guides/First-Steps.html",
+          "hash": "DyB6S30Vj651X8FAIekof4el5eqi0AQwIRnmu0Dk8kk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "guides/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "guides/toc.html",
+          "hash": "wL6SRMIsMGiEKaeQLOlOYipcxjGUWWAWOCGf/Nl9Q1s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo_128.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo_128.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo_48.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo_48.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "WWBnpBlzHoiY9BYY3CkJ0rodyjysV2fo/9jD93NRNSI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "Rja7ic4ql5g69IslX8mB5QBY4VYTocYXMUQS29ZBP6o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 6,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 20,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
