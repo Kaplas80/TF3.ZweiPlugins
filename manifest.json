@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.html",
-          "hash": "vSc5K69ZzDKF4nmfM7VjmRDxVMP99dpqVOmbDTDi6tg="
+          "hash": "sLsbAXlxtGb7ZU9WYVNqp3sL6rw53c/hba9M3vpYjzA="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.html",
-          "hash": "AuqHlMm6iiVUTSwAuUbEkllFLjpN1X9bKVw439fcRlA="
+          "hash": "casMx993gGyaywP8zKVCxlFtwT8sXid5nbG1Ft4W4qE="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.html",
-          "hash": "wZhaMq2iyybe0bpirpfkDaZdcdiPsk5XR59vkwBwb+0="
+          "hash": "VP/4gBeV1ZWgTClSWD4AAIwxprTYqebhkadLSsCATzs="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.html",
-          "hash": "HkRKsBiS+SZLBm2XuL1GOhlJMzqh4Ghl8NE+SAzd/cI="
+          "hash": "ezoxYhnKGA7s8WoO4j9VClgKdM1iD7eYDpeNDQ1M9hk="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.html",
-          "hash": "2N2rZmvUijS5G1ghSDk1EnxwklM8Ybt18unfTSnK1vM="
+          "hash": "mrsDbjgq8f+trapaLdjjaQuettqxRbBbE1Nuu9TNPcM="
         }
       },
       "is_incremental": false,
@@ -114,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer.html",
-          "hash": "gCDJNoEx1ivZ8XysZPDqV0JeEE2hP7n+GU7+eHZk/uQ="
+          "hash": "IoZv9lGHb8eF0BIiuJmfa+Fg6IyghVeFZ6IQQV/y8a4="
         }
       },
       "is_incremental": false,
@@ -138,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.html",
-          "hash": "nrRqovJmS4f+x6d08TcVXH2hTLfRraeQ5ZS7WX5lhRo="
+          "hash": "jX65wZz2XX0fGtsWYoAQybmQqsVpNyt2KtPqHl15njg="
         }
       },
       "is_incremental": false,
@@ -150,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.html",
-          "hash": "h4WK2QqKmqYb7XjThGzyVXSREshRd9YAC5QbuL5esP0="
+          "hash": "Y6u9obomYwiVheakvvDNLltMtbUmm0x6On+ZJxLJKhU="
         }
       },
       "is_incremental": false,
@@ -162,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.html",
-          "hash": "MUERQsa3bu58pV1Dp0Re1NCBP7cNSnVFrm7YcxpvPDo="
+          "hash": "jwLRyD3+vMuNsDSYT3or04nmZzgd83Qr9AmLR8NVggM="
         }
       },
       "is_incremental": false,
@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.html",
-          "hash": "oaePRrW6KTCJstDFgW61o+9dvYw/j8uMNI2Iyv8tblo="
+          "hash": "SSr0GkilOrY4aDcLqIXEM8jugkNCvR2mWyet1vxEfuY="
         }
       },
       "is_incremental": false,
@@ -210,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Helpers.MapStringLib.html",
-          "hash": "PpC9yQjZe9ibQiDJjJvCwAHET//LFjCFBmCaf63QZ9Y="
+          "hash": "VgV5vFDoRf0AkBkSmF3SD6CQiyMVtEi5R4SB6LumLww="
         }
       },
       "is_incremental": false,
@@ -234,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.html",
-          "hash": "zTuu5Eyyt5xtidzrnlhJr7CBrXYM30ALo+1HwDIiOh4="
+          "hash": "bQHLrcBurCJu5w2xJ9dQlu2F5Fy/qKjOSMFz58daD1o="
         }
       },
       "is_incremental": false,
@@ -246,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Types.DatFileType.html",
-          "hash": "19PqLYRjCEhyt/PjZxAjeaEtWXi8RrKZMYMB0DRbmco="
+          "hash": "sd0N5Ldjtg+DRzkAxnj0RLpfm6oBZMBQ4xwzY7tHqYI="
         }
       },
       "is_incremental": false,
@@ -258,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.html",
-          "hash": "a0yUcNCJ9nxgfk/8h4kPJmb0TPE+1MOG03Fei28S/U0="
+          "hash": "i+Jwj59h3fnjE2IT0qRW1j4djs0AEQy0ywsc+PV1C0I="
         }
       },
       "is_incremental": false,
@@ -282,7 +282,7 @@
       "output": {
         ".html": {
           "relative_path": "dev/Changelog.html",
-          "hash": "4Fe2ClflLr5woPyeV//bpWAR/GZrzmdAdgPLyYzBIWc="
+          "hash": "PcYGl3170RbAvUrHtPGN4iuDBEsywo/zjnBpFvYP4Y4="
         }
       },
       "is_incremental": false,
