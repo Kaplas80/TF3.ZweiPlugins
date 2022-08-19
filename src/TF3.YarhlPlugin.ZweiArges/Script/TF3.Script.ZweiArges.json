@@ -14,9 +14,9 @@
             "Id": "poHeader",
             "TypeName": "Yarhl.Media.Text.PoHeader, Yarhl.Media, Version=3.1.1.0, Culture=neutral, PublicKeyToken=null",
             "Value": {
-                "ProjectIdVersion": "Traducción Zwei: Arges Adventure",
+                "ProjectIdVersion": "Zwei: Arges Adventure",
                 "ReportMsgidBugsTo": "your@email.com",
-                "Language": "es"
+                "Language": "und"
             }
         }
     ],
@@ -24,8 +24,8 @@
         {
             "Id": "en.dat",
             "Name": "en.dat",
-            "Path": "en.dat",
-            "Checksum": 1107134743112370755,
+            "Paths": [ "en.dat" ],
+            "Checksums": [ 1107134743112370755 ],
             "Readers": [
                 {
                     "TypeName": "TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader",
@@ -43,8 +43,8 @@
         {
             "Id": "bin.dat",
             "Name": "bin.dat",
-            "Path": "bin.dat",
-            "Checksum": 15151614247217233213,
+            "Paths": [ "bin.dat" ],
+            "Checksums": [ 15151614247217233213 ],
             "Readers": [
                 {
                     "TypeName": "TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader",
