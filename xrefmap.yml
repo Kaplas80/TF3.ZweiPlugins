@@ -19,17 +19,28 @@ references:
   commentId: T:TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader
   nameWithType: Reader
-- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.Convert(BinaryFormat)
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.#ctor
+  name: Reader()
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.html#TF3_YarhlPlugin_ZweiArges_Converters_Dat_Reader__ctor
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.Reader()
+  nameWithType: Reader.Reader()
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.#ctor*
+  name: Reader
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.html#TF3_YarhlPlugin_ZweiArges_Converters_Dat_Reader__ctor_
+  commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.Reader
+  nameWithType: Reader.Reader
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.Convert(Yarhl.IO.BinaryFormat)
   name: Convert(BinaryFormat)
-  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.html#TF3_YarhlPlugin_ZweiArges_Converters_Dat_Reader_Convert_BinaryFormat_
-  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.Convert(BinaryFormat)
-  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.Convert(BinaryFormat)
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.html#TF3_YarhlPlugin_ZweiArges_Converters_Dat_Reader_Convert_Yarhl_IO_BinaryFormat_
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.Convert(Yarhl.IO.BinaryFormat)
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.Convert(Yarhl.IO.BinaryFormat)
   nameWithType: Reader.Convert(BinaryFormat)
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.Convert*
   name: Convert
   href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.html#TF3_YarhlPlugin_ZweiArges_Converters_Dat_Reader_Convert_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.Convert
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Reader.Convert
   nameWithType: Reader.Convert
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer
@@ -38,17 +49,28 @@ references:
   commentId: T:TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer
   nameWithType: Writer
-- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.Convert(NodeContainerFormat)
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.#ctor
+  name: Writer()
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.html#TF3_YarhlPlugin_ZweiArges_Converters_Dat_Writer__ctor
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.Writer()
+  nameWithType: Writer.Writer()
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.#ctor*
+  name: Writer
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.html#TF3_YarhlPlugin_ZweiArges_Converters_Dat_Writer__ctor_
+  commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.Writer
+  nameWithType: Writer.Writer
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.Convert(Yarhl.FileSystem.NodeContainerFormat)
   name: Convert(NodeContainerFormat)
-  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.html#TF3_YarhlPlugin_ZweiArges_Converters_Dat_Writer_Convert_NodeContainerFormat_
-  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.Convert(NodeContainerFormat)
-  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.Convert(NodeContainerFormat)
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.html#TF3_YarhlPlugin_ZweiArges_Converters_Dat_Writer_Convert_Yarhl_FileSystem_NodeContainerFormat_
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.Convert(Yarhl.FileSystem.NodeContainerFormat)
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.Convert(Yarhl.FileSystem.NodeContainerFormat)
   nameWithType: Writer.Convert(NodeContainerFormat)
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.Convert*
   name: Convert
   href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.html#TF3_YarhlPlugin_ZweiArges_Converters_Dat_Writer_Convert_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.Convert
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dat.Writer.Convert
   nameWithType: Writer.Convert
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll
@@ -63,6 +85,18 @@ references:
   commentId: T:TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings
   nameWithType: ExtractStrings
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.#ctor
+  name: ExtractStrings()
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_ExtractStrings__ctor
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.ExtractStrings()
+  nameWithType: ExtractStrings.ExtractStrings()
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.#ctor*
+  name: ExtractStrings
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_ExtractStrings__ctor_
+  commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.ExtractStrings
+  nameWithType: ExtractStrings.ExtractStrings
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.Convert(TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat)
   name: Convert(PEFileFormat)
   href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_ExtractStrings_Convert_TF3_YarhlPlugin_ZweiArges_Formats_PEFileFormat_
@@ -73,20 +107,18 @@ references:
   name: Convert
   href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_ExtractStrings_Convert_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.Convert
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.Convert
   nameWithType: ExtractStrings.Convert
-- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.Initialize(PoHeader)
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.Initialize(Yarhl.Media.Text.PoHeader)
   name: Initialize(PoHeader)
-  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_ExtractStrings_Initialize_PoHeader_
-  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.Initialize(PoHeader)
-  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.Initialize(PoHeader)
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_ExtractStrings_Initialize_Yarhl_Media_Text_PoHeader_
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.Initialize(Yarhl.Media.Text.PoHeader)
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.Initialize(Yarhl.Media.Text.PoHeader)
   nameWithType: ExtractStrings.Initialize(PoHeader)
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.Initialize*
   name: Initialize
   href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_ExtractStrings_Initialize_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.Initialize
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.ExtractStrings.Initialize
   nameWithType: ExtractStrings.Initialize
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader
@@ -95,17 +127,28 @@ references:
   commentId: T:TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader
   nameWithType: Reader
-- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.Convert(BinaryFormat)
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.#ctor
+  name: Reader()
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_Reader__ctor
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.Reader()
+  nameWithType: Reader.Reader()
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.#ctor*
+  name: Reader
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_Reader__ctor_
+  commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.Reader
+  nameWithType: Reader.Reader
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.Convert(Yarhl.IO.BinaryFormat)
   name: Convert(BinaryFormat)
-  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_Reader_Convert_BinaryFormat_
-  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.Convert(BinaryFormat)
-  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.Convert(BinaryFormat)
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_Reader_Convert_Yarhl_IO_BinaryFormat_
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.Convert(Yarhl.IO.BinaryFormat)
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.Convert(Yarhl.IO.BinaryFormat)
   nameWithType: Reader.Convert(BinaryFormat)
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.Convert*
   name: Convert
   href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_Reader_Convert_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.Convert
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.Convert
   nameWithType: Reader.Convert
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.Initialize(TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo)
@@ -118,7 +161,6 @@ references:
   name: Initialize
   href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_Reader_Initialize_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.Initialize
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Reader.Initialize
   nameWithType: Reader.Initialize
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate
@@ -127,6 +169,18 @@ references:
   commentId: T:TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate
   nameWithType: Translate
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.#ctor
+  name: Translate()
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_Translate__ctor
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.Translate()
+  nameWithType: Translate.Translate()
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.#ctor*
+  name: Translate
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_Translate__ctor_
+  commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.Translate
+  nameWithType: Translate.Translate
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.Convert(TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat)
   name: Convert(PEFileFormat)
   href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_Translate_Convert_TF3_YarhlPlugin_ZweiArges_Formats_PEFileFormat_
@@ -137,20 +191,18 @@ references:
   name: Convert
   href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_Translate_Convert_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.Convert
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.Convert
   nameWithType: Translate.Convert
-- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.Initialize(Po)
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.Initialize(Yarhl.Media.Text.Po)
   name: Initialize(Po)
-  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_Translate_Initialize_Po_
-  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.Initialize(Po)
-  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.Initialize(Po)
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_Translate_Initialize_Yarhl_Media_Text_Po_
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.Initialize(Yarhl.Media.Text.Po)
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.Initialize(Yarhl.Media.Text.Po)
   nameWithType: Translate.Initialize(Po)
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.Initialize*
   name: Initialize
   href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_Translate_Initialize_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.Initialize
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Translate.Initialize
   nameWithType: Translate.Initialize
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer
@@ -159,6 +211,18 @@ references:
   commentId: T:TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer
   nameWithType: Writer
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer.#ctor
+  name: Writer()
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_Writer__ctor
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer.Writer()
+  nameWithType: Writer.Writer()
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer.#ctor*
+  name: Writer
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_Writer__ctor_
+  commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer.Writer
+  nameWithType: Writer.Writer
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer.Convert(TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat)
   name: Convert(PEFileFormat)
   href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_Writer_Convert_TF3_YarhlPlugin_ZweiArges_Formats_PEFileFormat_
@@ -169,7 +233,6 @@ references:
   name: Convert
   href: api/TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer.html#TF3_YarhlPlugin_ZweiArges_Converters_Dll_Writer_Convert_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer.Convert
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Dll.Writer.Convert
   nameWithType: Writer.Convert
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Font
@@ -184,17 +247,28 @@ references:
   commentId: T:TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader
   nameWithType: Reader
-- uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.Convert(BinaryFormat)
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.#ctor
+  name: Reader()
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.html#TF3_YarhlPlugin_ZweiArges_Converters_Font_Reader__ctor
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.Reader()
+  nameWithType: Reader.Reader()
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.#ctor*
+  name: Reader
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.html#TF3_YarhlPlugin_ZweiArges_Converters_Font_Reader__ctor_
+  commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.Reader
+  nameWithType: Reader.Reader
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.Convert(Yarhl.IO.BinaryFormat)
   name: Convert(BinaryFormat)
-  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.html#TF3_YarhlPlugin_ZweiArges_Converters_Font_Reader_Convert_BinaryFormat_
-  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.Convert(BinaryFormat)
-  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.Convert(BinaryFormat)
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.html#TF3_YarhlPlugin_ZweiArges_Converters_Font_Reader_Convert_Yarhl_IO_BinaryFormat_
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.Convert(Yarhl.IO.BinaryFormat)
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.Convert(Yarhl.IO.BinaryFormat)
   nameWithType: Reader.Convert(BinaryFormat)
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.Convert*
   name: Convert
   href: api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.html#TF3_YarhlPlugin_ZweiArges_Converters_Font_Reader_Convert_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.Convert
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Reader.Convert
   nameWithType: Reader.Convert
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace
@@ -203,30 +277,40 @@ references:
   commentId: T:TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace
   nameWithType: Replace
-- uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Convert(NodeContainerFormat)
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.#ctor
+  name: Replace()
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.html#TF3_YarhlPlugin_ZweiArges_Converters_Font_Replace__ctor
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Replace()
+  nameWithType: Replace.Replace()
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.#ctor*
+  name: Replace
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.html#TF3_YarhlPlugin_ZweiArges_Converters_Font_Replace__ctor_
+  commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Replace
+  nameWithType: Replace.Replace
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Convert(Yarhl.FileSystem.NodeContainerFormat)
   name: Convert(NodeContainerFormat)
-  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.html#TF3_YarhlPlugin_ZweiArges_Converters_Font_Replace_Convert_NodeContainerFormat_
-  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Convert(NodeContainerFormat)
-  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Convert(NodeContainerFormat)
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.html#TF3_YarhlPlugin_ZweiArges_Converters_Font_Replace_Convert_Yarhl_FileSystem_NodeContainerFormat_
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Convert(Yarhl.FileSystem.NodeContainerFormat)
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Convert(Yarhl.FileSystem.NodeContainerFormat)
   nameWithType: Replace.Convert(NodeContainerFormat)
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Convert*
   name: Convert
   href: api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.html#TF3_YarhlPlugin_ZweiArges_Converters_Font_Replace_Convert_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Convert
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Convert
   nameWithType: Replace.Convert
-- uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Initialize(NodeContainerFormat)
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Initialize(Yarhl.FileSystem.NodeContainerFormat)
   name: Initialize(NodeContainerFormat)
-  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.html#TF3_YarhlPlugin_ZweiArges_Converters_Font_Replace_Initialize_NodeContainerFormat_
-  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Initialize(NodeContainerFormat)
-  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Initialize(NodeContainerFormat)
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.html#TF3_YarhlPlugin_ZweiArges_Converters_Font_Replace_Initialize_Yarhl_FileSystem_NodeContainerFormat_
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Initialize(Yarhl.FileSystem.NodeContainerFormat)
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Initialize(Yarhl.FileSystem.NodeContainerFormat)
   nameWithType: Replace.Initialize(NodeContainerFormat)
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Initialize*
   name: Initialize
   href: api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.html#TF3_YarhlPlugin_ZweiArges_Converters_Font_Replace_Initialize_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Initialize
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Replace.Initialize
   nameWithType: Replace.Initialize
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer
@@ -235,17 +319,28 @@ references:
   commentId: T:TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer
   nameWithType: Writer
-- uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.Convert(NodeContainerFormat)
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.#ctor
+  name: Writer()
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.html#TF3_YarhlPlugin_ZweiArges_Converters_Font_Writer__ctor
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.Writer()
+  nameWithType: Writer.Writer()
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.#ctor*
+  name: Writer
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.html#TF3_YarhlPlugin_ZweiArges_Converters_Font_Writer__ctor_
+  commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.Writer
+  nameWithType: Writer.Writer
+- uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.Convert(Yarhl.FileSystem.NodeContainerFormat)
   name: Convert(NodeContainerFormat)
-  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.html#TF3_YarhlPlugin_ZweiArges_Converters_Font_Writer_Convert_NodeContainerFormat_
-  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.Convert(NodeContainerFormat)
-  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.Convert(NodeContainerFormat)
+  href: api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.html#TF3_YarhlPlugin_ZweiArges_Converters_Font_Writer_Convert_Yarhl_FileSystem_NodeContainerFormat_
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.Convert(Yarhl.FileSystem.NodeContainerFormat)
+  fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.Convert(Yarhl.FileSystem.NodeContainerFormat)
   nameWithType: Writer.Convert(NodeContainerFormat)
 - uid: TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.Convert*
   name: Convert
   href: api/TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.html#TF3_YarhlPlugin_ZweiArges_Converters_Font_Writer_Convert_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.Convert
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Converters.Font.Writer.Convert
   nameWithType: Writer.Convert
 - uid: TF3.YarhlPlugin.ZweiArges.Formats
@@ -270,7 +365,6 @@ references:
   name: PEFileFormat
   href: api/TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.html#TF3_YarhlPlugin_ZweiArges_Formats_PEFileFormat__ctor_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.#ctor
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.PEFileFormat
   nameWithType: PEFileFormat.PEFileFormat
 - uid: TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.DeepClone
@@ -283,7 +377,6 @@ references:
   name: DeepClone
   href: api/TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.html#TF3_YarhlPlugin_ZweiArges_Formats_PEFileFormat_DeepClone_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.DeepClone
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.DeepClone
   nameWithType: PEFileFormat.DeepClone
 - uid: TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.Internal
@@ -296,7 +389,6 @@ references:
   name: Internal
   href: api/TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.html#TF3_YarhlPlugin_ZweiArges_Formats_PEFileFormat_Internal_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.Internal
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.Internal
   nameWithType: PEFileFormat.Internal
 - uid: TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.StringInfo
@@ -309,7 +401,6 @@ references:
   name: StringInfo
   href: api/TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.html#TF3_YarhlPlugin_ZweiArges_Formats_PEFileFormat_StringInfo_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.StringInfo
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Formats.PEFileFormat.StringInfo
   nameWithType: PEFileFormat.StringInfo
 - uid: TF3.YarhlPlugin.ZweiArges.Helpers
@@ -334,7 +425,6 @@ references:
   name: ToFullWidth
   href: api/TF3.YarhlPlugin.ZweiArges.Helpers.MapStringLib.html#TF3_YarhlPlugin_ZweiArges_Helpers_MapStringLib_ToFullWidth_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Helpers.MapStringLib.ToFullWidth
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Helpers.MapStringLib.ToFullWidth
   nameWithType: MapStringLib.ToFullWidth
 - uid: TF3.YarhlPlugin.ZweiArges.Helpers.MapStringLib.ToHalfWidth(System.String)
@@ -347,7 +437,6 @@ references:
   name: ToHalfWidth
   href: api/TF3.YarhlPlugin.ZweiArges.Helpers.MapStringLib.html#TF3_YarhlPlugin_ZweiArges_Helpers_MapStringLib_ToHalfWidth_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Helpers.MapStringLib.ToHalfWidth
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Helpers.MapStringLib.ToHalfWidth
   nameWithType: MapStringLib.ToHalfWidth
 - uid: TF3.YarhlPlugin.ZweiArges.Types
@@ -362,6 +451,18 @@ references:
   commentId: T:TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader
   fullName: TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader
   nameWithType: DatFileHeader
+- uid: TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.#ctor
+  name: DatFileHeader()
+  href: api/TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.html#TF3_YarhlPlugin_ZweiArges_Types_DatFileHeader__ctor
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.DatFileHeader()
+  nameWithType: DatFileHeader.DatFileHeader()
+- uid: TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.#ctor*
+  name: DatFileHeader
+  href: api/TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.html#TF3_YarhlPlugin_ZweiArges_Types_DatFileHeader__ctor_
+  commentId: Overload:TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.DatFileHeader
+  nameWithType: DatFileHeader.DatFileHeader
 - uid: TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.Magic
   name: Magic
   href: api/TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.html#TF3_YarhlPlugin_ZweiArges_Types_DatFileHeader_Magic
@@ -372,7 +473,6 @@ references:
   name: Magic
   href: api/TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.html#TF3_YarhlPlugin_ZweiArges_Types_DatFileHeader_Magic_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.Magic
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.Magic
   nameWithType: DatFileHeader.Magic
 - uid: TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.TypesCount
@@ -385,7 +485,6 @@ references:
   name: TypesCount
   href: api/TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.html#TF3_YarhlPlugin_ZweiArges_Types_DatFileHeader_TypesCount_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.TypesCount
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Types.DatFileHeader.TypesCount
   nameWithType: DatFileHeader.TypesCount
 - uid: TF3.YarhlPlugin.ZweiArges.Types.DatFileType
@@ -394,6 +493,18 @@ references:
   commentId: T:TF3.YarhlPlugin.ZweiArges.Types.DatFileType
   fullName: TF3.YarhlPlugin.ZweiArges.Types.DatFileType
   nameWithType: DatFileType
+- uid: TF3.YarhlPlugin.ZweiArges.Types.DatFileType.#ctor
+  name: DatFileType()
+  href: api/TF3.YarhlPlugin.ZweiArges.Types.DatFileType.html#TF3_YarhlPlugin_ZweiArges_Types_DatFileType__ctor
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Types.DatFileType.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Types.DatFileType.DatFileType()
+  nameWithType: DatFileType.DatFileType()
+- uid: TF3.YarhlPlugin.ZweiArges.Types.DatFileType.#ctor*
+  name: DatFileType
+  href: api/TF3.YarhlPlugin.ZweiArges.Types.DatFileType.html#TF3_YarhlPlugin_ZweiArges_Types_DatFileType__ctor_
+  commentId: Overload:TF3.YarhlPlugin.ZweiArges.Types.DatFileType.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Types.DatFileType.DatFileType
+  nameWithType: DatFileType.DatFileType
 - uid: TF3.YarhlPlugin.ZweiArges.Types.DatFileType.Extension
   name: Extension
   href: api/TF3.YarhlPlugin.ZweiArges.Types.DatFileType.html#TF3_YarhlPlugin_ZweiArges_Types_DatFileType_Extension
@@ -404,7 +515,6 @@ references:
   name: Extension
   href: api/TF3.YarhlPlugin.ZweiArges.Types.DatFileType.html#TF3_YarhlPlugin_ZweiArges_Types_DatFileType_Extension_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Types.DatFileType.Extension
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Types.DatFileType.Extension
   nameWithType: DatFileType.Extension
 - uid: TF3.YarhlPlugin.ZweiArges.Types.DatFileType.FileCount
@@ -417,7 +527,6 @@ references:
   name: FileCount
   href: api/TF3.YarhlPlugin.ZweiArges.Types.DatFileType.html#TF3_YarhlPlugin_ZweiArges_Types_DatFileType_FileCount_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Types.DatFileType.FileCount
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Types.DatFileType.FileCount
   nameWithType: DatFileType.FileCount
 - uid: TF3.YarhlPlugin.ZweiArges.Types.DatFileType.Offset
@@ -430,7 +539,6 @@ references:
   name: Offset
   href: api/TF3.YarhlPlugin.ZweiArges.Types.DatFileType.html#TF3_YarhlPlugin_ZweiArges_Types_DatFileType_Offset_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Types.DatFileType.Offset
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Types.DatFileType.Offset
   nameWithType: DatFileType.Offset
 - uid: TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo
@@ -439,6 +547,18 @@ references:
   commentId: T:TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo
   fullName: TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo
   nameWithType: DllStringInfo
+- uid: TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.#ctor
+  name: DllStringInfo()
+  href: api/TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.html#TF3_YarhlPlugin_ZweiArges_Types_DllStringInfo__ctor
+  commentId: M:TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.DllStringInfo()
+  nameWithType: DllStringInfo.DllStringInfo()
+- uid: TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.#ctor*
+  name: DllStringInfo
+  href: api/TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.html#TF3_YarhlPlugin_ZweiArges_Types_DllStringInfo__ctor_
+  commentId: Overload:TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.#ctor
+  fullName: TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.DllStringInfo
+  nameWithType: DllStringInfo.DllStringInfo
 - uid: TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.PointerTableOffset
   name: PointerTableOffset
   href: api/TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.html#TF3_YarhlPlugin_ZweiArges_Types_DllStringInfo_PointerTableOffset
@@ -449,7 +569,6 @@ references:
   name: PointerTableOffset
   href: api/TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.html#TF3_YarhlPlugin_ZweiArges_Types_DllStringInfo_PointerTableOffset_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.PointerTableOffset
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.PointerTableOffset
   nameWithType: DllStringInfo.PointerTableOffset
 - uid: TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.StringCount
@@ -462,6 +581,5 @@ references:
   name: StringCount
   href: api/TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.html#TF3_YarhlPlugin_ZweiArges_Types_DllStringInfo_StringCount_
   commentId: Overload:TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.StringCount
-  isSpec: "True"
   fullName: TF3.YarhlPlugin.ZweiArges.Types.DllStringInfo.StringCount
   nameWithType: DllStringInfo.StringCount
