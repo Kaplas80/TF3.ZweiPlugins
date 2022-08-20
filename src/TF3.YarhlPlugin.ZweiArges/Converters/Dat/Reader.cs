@@ -1,4 +1,4 @@
-// Copyright (c) 2021 Kaplas
+// Copyright (c) 2022 Kaplas
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -59,7 +59,7 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Dat
             CheckHeader(header);
 
             Node root = NodeFactory.CreateContainer("root");
-            DatFileType[] fileTypeInfo = new DatFileType[header.TypesCount];
+            var fileTypeInfo = new DatFileType[header.TypesCount];
 
             for (int i = 0; i < header.TypesCount; i++)
             {

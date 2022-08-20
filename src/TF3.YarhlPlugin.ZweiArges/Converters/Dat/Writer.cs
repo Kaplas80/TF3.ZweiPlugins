@@ -1,4 +1,4 @@
-// Copyright (c) 2021 Kaplas
+// Copyright (c) 2022 Kaplas
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -71,7 +71,7 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Dat
             int numFilesAcum = 0;
             for (int i = 0; i < extensions.Length; i++)
             {
-                DatFileType fileType = new DatFileType
+                var fileType = new DatFileType
                 {
                     Extension = extensions[i].Extension.TrimStart('.'),
                     Offset = (uint)(0x08 + (extensions.Length * 0x0C) + (numFilesAcum * 0x10)),
