@@ -1,4 +1,4 @@
-// Copyright (c) 2021 Kaplas
+// Copyright (c) 2022 Kaplas
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -40,7 +40,7 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Dll
     /// </summary>
     public class Translate : IConverter<PEFileFormat, PEFileFormat>, IInitializer<Po>
     {
-        private readonly List<Tuple<string, string>> _replacements = new ();
+        private readonly List<Tuple<string, string>> _replacements = new List<Tuple<string, string>>();
 
         private Po _translation = null;
 
@@ -76,9 +76,9 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Dll
             }
 
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-            Encoding shiftJis = Encoding.GetEncoding(932);
+            var shiftJis = Encoding.GetEncoding(932);
 
-            PEFileFormat result = source.DeepClone() as PEFileFormat;
+            var result = source.DeepClone() as PEFileFormat;
 
             uint pointerTableOffset = result.StringInfo.PointerTableOffset;
             uint stringCount = result.StringInfo.StringCount;
@@ -87,15 +87,15 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Dll
             uint[] translationOffsets = new uint[stringCount];
             using (DataStream stream = DataStreamFactory.FromArray(translationData, 0, translationData.Length))
             {
-                DataWriter writer = new (stream)
+                var writer = new DataWriter(stream)
                 {
                     DefaultEncoding = shiftJis,
                 };
 
-                MatchEvaluator toHalfWidth = new ((match) => MapStringLib.ToHalfWidth(match.Groups[1].ToString()));
+                var toHalfWidth = new MatchEvaluator((match) => MapStringLib.ToHalfWidth(match.Groups[1].ToString()));
 
                 const string pattern = "＜([^＞]+)＞";
-                Regex regex = new (pattern);
+                var regex = new Regex(pattern);
                 for (int i = _translation.Entries.Count - 1; i >= 0; i--)
                 {
                     PoEntry entry = _translation.Entries[i];
@@ -153,7 +153,7 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Dll
             using (DataStream stream = DataStreamFactory.FromArray(pointerTableSectionData, 0, pointerTableSectionData.Length))
             {
                 stream.Position = pointerTableOffset - (long)pointerTableSection.Offset;
-                DataWriter writer = new (stream);
+                var writer = new DataWriter(stream);
 
                 for (int i = 0; i < translationOffsets.Length; i++)
                 {

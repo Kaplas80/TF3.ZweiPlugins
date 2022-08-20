@@ -1,4 +1,4 @@
-// Copyright (c) 2021 Kaplas
+// Copyright (c) 2022 Kaplas
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -34,7 +34,7 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Dll
     /// </summary>
     public class ExtractStrings : IConverter<PEFileFormat, Po>, IInitializer<PoHeader>
     {
-        private PoHeader _poHeader = new ("NoName", "dummy@dummy.com", "en");
+        private PoHeader _poHeader = new PoHeader("NoName", "dummy@dummy.com", "en");
 
         /// <summary>
         /// Converter initializer.
@@ -56,7 +56,7 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Dll
             }
 
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-            Encoding shiftJis = Encoding.GetEncoding(932);
+            var shiftJis = Encoding.GetEncoding(932);
 
             var po = new Po(_poHeader);
 
@@ -99,7 +99,7 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Dll
 
         private string ParseString(string input)
         {
-            StringBuilder sb = new ();
+            var sb = new StringBuilder();
 
             for (int i = 0; i < input.Length;)
             {

@@ -1,4 +1,4 @@
-// Copyright (c) 2021 Kaplas
+// Copyright (c) 2022 Kaplas
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -63,7 +63,7 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Dll
             source.Stream.Position = 0;
             var reader = new DataReader(source.Stream);
             byte[] data = reader.ReadBytes((int)source.Stream.Length);
-            PEFileFormat result = new ()
+            var result = new PEFileFormat()
             {
                 Internal = AsmResolver.PE.File.PEFile.FromBytes(data),
                 StringInfo = _stringInfo,

@@ -1,4 +1,4 @@
-// Copyright (c) 2021 Kaplas
+// Copyright (c) 2022 Kaplas
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -50,8 +50,10 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Font
 
             var reader = new DataReader(source.Stream);
 
-            BmpEncoder encoder = new ();
-            encoder.BitsPerPixel = BmpBitsPerPixel.Pixel8;
+            var encoder = new BmpEncoder
+            {
+                BitsPerPixel = BmpBitsPerPixel.Pixel8,
+            };
 
             Node root = NodeFactory.CreateContainer("root");
             for (int charIndex = 0x8141; reader.Stream.Position < reader.Stream.Length; charIndex++)
@@ -59,25 +61,29 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Font
                 byte[] imageData = reader.ReadBytes(8 * 16);
                 int width = ((imageData[6] | (imageData[7] << 8)) >> 9) & 0x7F;
 
-                using Image<L8> image = new (width, 16);
+                using var image = new Image<L8>(width, 16);
 
-                for (int y = 0; y < 16; y++)
+                image.ProcessPixelRows(accessor =>
                 {
-                    Span<L8> pixelRowSpan = image.GetPixelRowSpan(y);
-                    for (int x = 0; x < width; x++)
+                    for (int y = 0; y < 16; y++)
                     {
-                        int byteIndex = (y * 8) + ((x / 5) * 2);
-                        int offset = (x % 5) * 3;
-                        int value = ((imageData[byteIndex] | (imageData[byteIndex + 1] << 8)) >> offset) & 7;
-
-                        if (value != 0)
+                        Span<L8> pixelRow = accessor.GetRowSpan(y);
+                        for (int x = 0; x < width; x++)
                         {
-                            // The image is indexed but the pallete is unknown, so I use a custom grayscale palette.
-                            byte v = (byte)((value * 32) + 31);
-                            pixelRowSpan[x] = new L8(v);
+                            ref L8 pixel = ref pixelRow[x];
+                            int byteIndex = (y * 8) + ((x / 5) * 2);
+                            int offset = (x % 5) * 3;
+                            int value = ((imageData[byteIndex] | (imageData[byteIndex + 1] << 8)) >> offset) & 7;
+
+                            if (value != 0)
+                            {
+                                // The image is indexed but the pallete is unknown, so I use a custom grayscale palette.
+                                byte v = (byte)((value * 32) + 31);
+                                pixel = new L8(v);
+                            }
                         }
                     }
-                }
+                });
 
                 Node node = NodeFactory.FromMemory($"{charIndex}.bmp");
 

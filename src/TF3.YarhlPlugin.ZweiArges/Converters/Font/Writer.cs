@@ -1,4 +1,4 @@
-// Copyright (c) 2021 Kaplas
+// Copyright (c) 2022 Kaplas
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -59,34 +59,39 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Font
                 int charIndex = int.Parse(bmpNode.Name.Replace(".bmp", string.Empty)) - 0x8141;
                 writer.Stream.Position = charIndex * 0x80;
 
-                Image<Rgb24> image = Image.Load<Rgb24>(bmpNode.Stream);
+                var image = Image.Load<Rgb24>(bmpNode.Stream);
                 image.Mutate(x => x.Quantize(quantizer));
 
                 ushort[] rowValues = new ushort[4];
-                for (int y = 0; y < 16; y++)
+
+                image.ProcessPixelRows(accessor =>
                 {
-                    rowValues[0] = 0x0000;
-                    rowValues[1] = 0x0000;
-                    rowValues[2] = 0x0000;
-                    rowValues[3] = y == 0 ? (ushort)(image.Width << 9) : (ushort)0x0000;
-
-                    Span<Rgb24> pixelRowSpan = image.GetPixelRowSpan(y);
-
-                    for (int x = 0; x < 17; x++)
+                    for (int y = 0; y < 16; y++)
                     {
-                        int ushortIndex = x / 5;
-                        int offset = (x % 5) * 3;
+                        rowValues[0] = 0x0000;
+                        rowValues[1] = 0x0000;
+                        rowValues[2] = 0x0000;
+                        rowValues[3] = y == 0 ? (ushort)(image.Width << 9) : (ushort)0x0000;
 
-                        byte value = x >= image.Width ? (byte)7 : GetColorIndex(pixelRowSpan[x]);
+                        Span<Rgb24> pixelRow = accessor.GetRowSpan(y);
 
-                        rowValues[ushortIndex] |= (ushort)(value << offset);
+                        for (int x = 0; x < 17; x++)
+                        {
+                            ref Rgb24 pixel = ref pixelRow[x];
+                            int ushortIndex = x / 5;
+                            int offset = (x % 5) * 3;
+
+                            byte value = x >= image.Width ? (byte)7 : GetColorIndex(pixel);
+
+                            rowValues[ushortIndex] |= (ushort)(value << offset);
+                        }
+
+                        writer.Write(rowValues[0]);
+                        writer.Write(rowValues[1]);
+                        writer.Write(rowValues[2]);
+                        writer.Write(rowValues[3]);
                     }
-
-                    writer.Write(rowValues[0]);
-                    writer.Write(rowValues[1]);
-                    writer.Write(rowValues[2]);
-                    writer.Write(rowValues[3]);
-                }
+                });
             }
 
             return new BinaryFormat(stream);
@@ -94,7 +99,7 @@ namespace TF3.YarhlPlugin.ZweiArges.Converters.Font
 
         private static ReadOnlyMemory<Color> BuildPalette()
         {
-            Color[] palette = new Color[8];
+            var palette = new Color[8];
             palette[0] = new Color(new Rgb24(0, 0, 0));
             for (int i = 1; i < 8; i++)
             {
