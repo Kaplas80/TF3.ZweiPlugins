@@ -4,7 +4,7 @@
         "src": [
           {
             "files": [
-              "TF3.YarhlPlugin.ZweiArges/TF3.YarhlPlugin.ZweiArges.csproj"
+              "TF3.YarhlPlugin.ZweiArges/bin/**/TF3.YarhlPlugin.ZweiArges.dll"
             ],
             "src": "../src"
           }
